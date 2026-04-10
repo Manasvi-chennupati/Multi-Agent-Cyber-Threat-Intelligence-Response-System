@@ -46,15 +46,15 @@ Google Sheets (with email alerts)
  
 
 **6. ▶️ How to Run Locally**
-# Step 1
+STEP 1
 pip install requests streamlit python-dotenv
 
-# Step 2
+STEP 2
 .env file
 ABUSE_API_KEY=your_api_key
 VT_API_KEY=your_api_key
 
-# Step 3
+STEP 3
 Run n8n
 n8n start
 
@@ -69,8 +69,8 @@ https://www.virustotal.com/
 https://docs.n8n.io/
 https://docs.streamlit.io/
 
-**8. Recording **
-
+**8. Recording**
+https://drive.google.com/file/d/1qiCh8StwE_Iy4Hj-fn5oayJXBWXuOkp2/view?usp=drivesdk
 **9. 📸 Screenshot**
 
 Website UI 
