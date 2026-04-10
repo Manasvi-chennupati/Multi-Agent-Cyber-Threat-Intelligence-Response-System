@@ -1,0 +1,27 @@
+{"input": "8.8.8.8", "type": "IP", "score": 0, "status": "SAFE"}
+{"input": "185.220.101.1", "type": "IP", "score": 100, "status": "THREAT"}
+{"input": "185.220.101.1", "type": "IP", "score": 100, "status": "THREAT"}
+{"input": "185.220.101.1", "type": "IP", "score": 100, "status": "THREAT"}
+{"input": "https://www.facebook.com/", "type": "URL", "score": 50, "status": "SAFE"}
+{"input": "http://testphp.vulnweb.com", "type": "URL", "score": 50, "status": "SAFE"}
+{"input": "http://malware.testing.google.test/testing/malware/", "type": "URL", "score": 50, "status": "SAFE"}
+{"input": "https://secure.eicar.org/eicar.com", "type": "URL", "score": 50, "status": "SAFE"}
+{"input": "8.8.8.8", "type": "IP", "time": "2026-04-09 20:50:20.474274", "score": 0, "status": "SAFE", "country": null, "city": null}
+{"input": "1.1.1.1", "type": "IP", "time": "2026-04-09 20:52:07.463181", "score": 0, "status": "SAFE", "country": null, "city": null}
+{"input": "1.1.1.1", "type": "IP", "time": "2026-04-09 20:53:33.011723", "score": 0, "status": "SAFE", "country": null, "city": null}
+{"input": "1.1.1.1", "type": "IP", "time": "2026-04-09 20:55:29.141775", "score": 0, "status": "SAFE", "country": null, "city": null}
+{"input": "1.1.1.1", "type": "IP", "time": "2026-04-09 20:58:00.419087", "score": 0, "status": "SAFE", "country": "Unknown", "city": "Unknown"}
+{"input": "1.1.1.1", "type": "IP", "time": "2026-04-09 20:59:33.303761", "score": 0, "status": "SAFE", "country": "Australia", "city": "South Brisbane"}
+{"input": "8.8.8.8", "type": "IP", "time": "2026-04-09 20:59:45.138760", "score": 0, "status": "SAFE", "country": "United States", "city": "Ashburn"}
+{"input": "https://www.facebok.com", "type": "URL", "time": "2026-04-09 21:00:13.065422", "status": "CHECKED", "note": "URL submitted to VirusTotal"}
+{"input": "https://www.facebook.com", "type": "URL", "time": "2026-04-09 21:00:35.880379", "status": "CHECKED", "note": "URL submitted to VirusTotal"}
+{"input": "8.8.8.8", "type": "IP", "time": "2026-04-09 22:12:00.672703", "score": 0, "status": "SAFE", "country": "United States", "city": "Ashburn"}
+{"input": "8.8.8.8", "type": "IP", "time": "2026-04-09 22:12:43.474481", "score": 0, "status": "SAFE", "country": "United States", "city": "Ashburn"}
+{"input": "8.8.8.8", "type": "IP", "time": "2026-04-09 22:15:52.214467", "score": 0, "status": "SAFE", "country": "United States", "city": "Ashburn"}
+{"input": "8.8.8.8", "type": "IP", "time": "2026-04-09 22:18:01.401601", "score": 0, "status": "SAFE", "country": "United States", "city": "Ashburn"}
+{"input": "8.8.8.8", "type": "IP", "time": "2026-04-09 22:30:47.923332", "score": 0, "status": "SAFE", "country": "United States", "city": "Ashburn"}
+{"input": "8.8.8.8", "type": "IP", "time": "2026-04-09 22:32:27.050151", "score": 0, "status": "SAFE", "country": "United States", "city": "Ashburn"}
+{"input": "8.8.8.8", "type": "IP", "time": "2026-04-10 09:47:02.113693", "score": 0, "status": "SAFE", "country": "United States", "city": "Ashburn"}
+{"input": "8.8.8.8", "type": "IP", "time": "2026-04-10 09:47:51.122509", "score": 0, "status": "SAFE", "country": "United States", "city": "Ashburn"}
+{"input": "8.8.8.8", "type": "IP", "time": "2026-04-10 10:18:25.141882", "score": 0, "status": "SAFE", "country": "United States", "city": "Ashburn"}
+{"input": "8.8.8.8", "type": "IP", "time": "2026-04-10 10:19:47.817791", "score": 0, "status": "SAFE", "country": "United States", "city": "Ashburn"}
