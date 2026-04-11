@@ -12,64 +12,56 @@ To address this problem, a smart and automated system is required that can:
 Analyze different types of inputs such as IP addresses, URLs, and file hashes
 Detect threats using external threat intelligence APIs
 Automatically trigger alerts and workflows
-Store logs for future analysis and auditing
-
+Store logs for future analysis and auditing        
 Such a system should be fast, scalable, and capable of making decisions without human intervention.
 
 **3. 🚀 Implemented Solution**
 
-The proposed solution is a Multi-Agent Cyber Threat Intelligence System built using Agentic AI concepts.
+The proposed solution is a Multi-Agent Cyber Threat Intelligence System built using Agentic AI concepts.     
+The system consists of multiple specialized agents:       
+Monitoring Agent → Captures user input (IP/URL/HASH)       
+Analysis Agent → Evaluates threats using APIs (AbuseIPDB, VirusTotal)            
+Response Agent → Takes action and triggers workflows         
+Explanation Agent → Generates human-readable explanations        
 
-The system consists of multiple specialized agents:
-
-Monitoring Agent → Captures user input (IP/URL/HASH)
-Analysis Agent → Evaluates threats using APIs (AbuseIPDB, VirusTotal)
-Response Agent → Takes action and triggers workflows
-Explanation Agent → Generates human-readable explanations
 **🔄 Workflow:**
-User enters input through the web interface
-Monitoring Agent collects the input
-Analysis Agent checks threat level using APIs
-System classifies result as SAFE or THREAT
-Response Agent triggers automation via n8n
-Data is stored in Google Sheets
-User can view results and search history
+
+User enters input through the web interface     
+Monitoring Agent collects the input         
+Analysis Agent checks threat level using APIs         
+System classifies result as SAFE or THREAT             
+Response Agent triggers automation via n8n            
+Data is stored in Google Sheets                
+User can view results and search history           
 
 This system ensures real-time detection, automation, and logging.
 
 **4. 🛠️ Tech Stack Used**
 
-Component	            Technology
-
-Backend Logic	Python
-
-Frontend UI	            Streamlit
-
-Workflow Automation	n8n
-
-IP Analysis	AbuseIPDB    API
-
-URL/Hash Analysis	VirusTotal API
-
-Database/Logging	Google Sheets
-
-Environment Config	python-dotenv
+Component	    -    Technology      
+Backend Logic	    -   Python            
+Frontend UI	    -   Streamlit         
+Workflow Automation -   n8n       
+IP Analysis	    -   AbuseIPDB  API          
+URL/Hash Analysis   -	VirusTotal API         
+Database/Logging    -	Google Sheets         
+Environment Config  -	python-dotenv
 
 **5. 🧩 Architecture Diagram**
 
 Architecture Flow:
 User Input (Website)
-        ↓
+        ->
 Monitoring Agent
-        ↓
+        ->
 Analysis Agent (APIs)
-        ↓
+        ->
 Decision (SAFE / THREAT)
-        ↓
+        ->
 Response Agent
-        ↓
+        ->
 n8n Workflow Automation
-        ↓
+        ->
 Google Sheets + Email Alerts
 ![UI](screenshots/Architecture.png)
 **6. ▶️ How to Run Locally**
@@ -91,42 +83,44 @@ python -m streamlit run app.py
 http://localhost:8501
 
 **7. 📚 References & Resources**
-https://www.abuseipdb.com/
-https://www.virustotal.com/
-https://docs.n8n.io/
-https://docs.streamlit.io/
+
+https://www.abuseipdb.com/     
+https://www.virustotal.com/       
+https://docs.n8n.io/        
+https://docs.streamlit.io/     
+
 **8. 🎥 Recording**
 
 https://drive.google.com/file/d/1qiCh8StwE_Iy4Hj-fn5oayJXBWXuOkp2/view?usp=drivesdk
 
 **9. 📸 Screenshots**
-🌐 Website UI
+
+🌐 Website UI         
 ![UI](screenshots/home.png)
 
 ![UI](screenshots/home1.png)
 
 ![UI](screenshots/result.png)
-🔗 n8n Workflow
+
+🔗 n8n Workflow        
 
 ![n8n](screenshots/workflow.png)
 
-📊 Google Sheets Output
+📊 Google Sheets Output     
 
 ![sheets](screenshots/sheets.png)
 
 **10. 📐 Formatting**
-✔ Proper headings used
-✔ Bullet points for readability
-✔ Clean spacing and alignment
-✔ Structured sections for clarity
-**11. ⚠️ Problems Encountered and Solutions**
 
-During the development of this project, several technical challenges were encountered and resolved effectively.
+✔ Proper headings used        
+✔ Bullet points for readability        
+✔ Clean spacing and alignment         
+✔ Structured sections for clarity         
 
-One of the major issues was handling API errors, as external services like AbuseIPDB and VirusTotal sometimes returned unexpected responses or failed requests. This was resolved by implementing robust error handling using try-except blocks, ensuring that the system continues to function smoothly even when API failures occur.
+**11. ⚠️ Problems Encountered and Solutions**       
 
-Another challenge was the Streamlit rerender behavior, where the entire UI reloads on every interaction. This caused input fields and buttons to reset frequently. To overcome this, Streamlit’s session_state was used to preserve UI state and maintain user interactions across reruns.
-
-There was also an issue with data integration in n8n, where the system initially returned unstructured text instead of JSON. This caused mapping failures when sending data to Google Sheets. The issue was fixed by restructuring outputs into proper JSON format, enabling seamless workflow automation.
-
+During the development of this project, several technical challenges were encountered and resolved effectively.   
+One of the major issues was handling API errors, as external services like AbuseIPDB and VirusTotal sometimes returned unexpected responses or failed requests. This was resolved by implementing robust error handling using try-except blocks, ensuring that the system continues to function smoothly even when API failures occur.       
+Another challenge was the Streamlit rerender behavior, where the entire UI reloads on every interaction. This caused input fields and buttons to reset frequently. To overcome this, Streamlit’s session_state was used to preserve UI state and maintain user interactions across reruns.        
+There was also an issue with data integration in n8n, where the system initially returned unstructured text instead of JSON. This caused mapping failures when sending data to Google Sheets. The issue was fixed by restructuring outputs into proper JSON format, enabling seamless workflow automation.     
 Additionally, the history feature initially relied on temporary memory, causing data loss after refresh. This was solved by implementing persistent storage using a local JSON file, allowing users to retrieve and filter past records efficiently.
