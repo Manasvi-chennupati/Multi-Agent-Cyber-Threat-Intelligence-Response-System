@@ -27,3 +27,4 @@
 {"input": "8.8.8.8", "type": "IP", "time": "2026-04-10 10:19:47.817791", "score": 0, "status": "SAFE", "country": "United States", "city": "Ashburn"}
 {"input": "185.220.101.1", "type": "IP", "time": "2026-04-10 11:40:19.972255", "score": 100, "status": "THREAT", "country": "Germany", "city": "Brandenburg"}
 {"input": "185.220.101.1", "type": "IP", "time": "2026-04-10 11:59:46.138276", "score": 100, "status": "THREAT", "country": "Germany", "city": "Brandenburg"}
+{"input": "10.171.92.104", "type": "IP", "time": "2026-04-10 15:11:51.292327", "score": 0, "status": "SAFE", "country": "Unknown", "city": "Unknown"}
